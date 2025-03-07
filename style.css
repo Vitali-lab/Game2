@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    width: 2000px;
+    height: 1800px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(58, 57, 57, 0.425);
+    z-index: 111;
+    /* clip-path: inset(0px 240px 0% 250px round 0px); */
+    overflow: hidden;
+
+}
+.naruto {
+    opacity: 1;
+    width: 230px;
+    position: absolute;
+    top: 550px;
+    left: 150px;
+    z-index: 10;
+    padding: 0px;
+    transform: translate(-600px);
+    transition: transform 2s ease;
+    
+    
+    
+}
+button {
+    
+}
+
+.a2 {
+    max-width: 1500px;
+    height: 800px;
+    
+    position: relative;
+    top: 0;
+    border: 1px solid black;
+    background-image: url(/bmdsrqscitu412.jpg);
+    
+    background-size: cover;
+    background-position-x: 0px;
+    transition: background-position 300s ease;
+}
+.a1{width: 1500px;
+    height: 800px;
+    position: relative;
+    margin: 50px auto;
+
+}
+
+@keyframes up {
+    0% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
+      }
+     
+      50% {
+        -webkit-transform: translateY(-500px);
+                transform: translateY(-500px);
+
+     
+      }
+      100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+
+.up{
+   animation: up 1s  ;
+   
+}
+
+
+.slide-in-left {
+	
+	        animation: slide-in-left 8s cubic-bezier(0.250, 0.460, 0.450, 6) both; 
+            
+    }
+
+@keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-2000px);
+              transform: translateX(-2000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  #go {
+    opacity: 1;
+    position: absolute;
+    width: 100px;
+    top: 1050px;
+    left: 1000px;
+    cursor: pointer;
+  }
+
+  #go:active{
+    border: 1px solid black;
+  }
+
+  .floor {
+    position: absolute;
+    top: 700px;
+    height: 100px;
+    width: 100%;
+  }
+
+  .shuriken{
+    position: absolute;
+    width: 200px;
+    left: 1600px;
+    top: 600px;
+    z-index: 10;
+    opacity: 1;
+    
+    
+    
+    
+  }
+
+  @keyframes shuriken1 {
+    0% {
+        -webkit-transform: translateX(-50px);
+                transform: translateX(-50px);
+       
+        
+        
+      }
+     
+      
+      100% {
+        -webkit-transform: translateX(-2050px);
+                transform: translateX(-2050px);
+        
+        
+        
+      }
+  }
+  .shuriken1{
+    animation: shuriken1 2s ;
+    
+    
+  }
+  .tree {
+    position: absolute;
+    height: 600px;
+    top: 170px;
+    left: 1000px;
+    animation: tree 10s;
+  }
+
+  .tree2 {
+    position: absolute;
+    height: 600px;
+    top: 170px;
+    left: 1000px;
+  }
+
+  .tree3 {
+    position: absolute;
+    height: 600px;
+    top: 170px;
+    left: 1000px;
+    
+    opacity: 1;
+  }
+
+  
+
+  @keyframes treeRun {
+    0% {
+        -webkit-transform: translateX(-200px);
+                transform: translateX(-200px);
+        opacity: 1;
+      }
+     
+      
+      100% {
+        -webkit-transform: translateX(-3450px);
+                transform: translateX(-3450px);
+        opacity: 1;
+      }
+  }
+
+  .treeRun{
+    animation: treeRun 3s;
+  }
+
+  .startGame {position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.753);
+    z-index: 1110;
+
+  }
+  .button-start {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    border-radius: none;
+    width: 200px;
+    height: 50px;
+    background: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+
+  }
+  .startText {
+    position: absolute;
+    top:17%;
+    left:40%;
+    color: white;
+    font-size: 100px;
+
+  }
+
+
+
+  .gameOver {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.753);
+    z-index: 10;
+  }
+  .text-game-over {
+    position: absolute;
+    top:17%;
+    left:28%;
+    color: white;
+    font-size: 150px;
+  }
+  .button-game-over {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    border-radius: none;
+    width: 200px;
+    height: 50px;
+    background: none;
+    color: white;
+    border-radius: 20px;
+    
+  }
+
+  @keyframes gOver {
+    0% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
+      }
+     
+      50% {
+        -webkit-transform: translateY(-500px);
+                transform: translateY(-500px);
+        opacity: 1;
+     
+      }
+      100% {
+        -webkit-transform: translateY(1000px);
+                transform: translateY(1000px);
+        opacity: 0;
+      }
+    }
+    .gOver{
+        animation: gOver 1s;
+        opacity: 0;
+      }
+      .stopAnim{
+        opacity: 0;
+        animation: none;
+      } 
+
+
+      @keyframes growAnim {
+        0% {
+            -webkit-transform: translateY(-3px);
+                    transform: translateY(-3px);
+            opacity: 1;
+          }
+             
+          
+          100% {
+            -webkit-transform: translateY(3px);
+                    transform: translateY(3px);
+            opacity: 1;
+          }
+        }
+
+          .growAnim {
+            animation: growAnim 2s;
+            
+      }
+
+      @keyframes treeRun1 {
+        0% {
+            -webkit-transform: translateX(-200px);
+                    transform: translateX(-200px);
+            opacity: 1;
+          }
+         
+          
+          100% {
+            -webkit-transform: translateX(-3450px);
+                    transform: translateX(-3450px);
+            opacity: 1;
+          }
+      }
+    
+      .treeRun1{
+        animation: treeRun1 2s;
+      }
+
+     #rasengan {
+        position: absolute;
+        top:310px;
+        left: 70px;
+        width: 350px;
+        opacity: 0;
+        z-index: 9999;
+     }
+
+     .sharingan{
+        position: absolute;
+        top: 170px;
+        z-index: 5;
+        left: 1400px;
+        width: 280px;
+        
+     }
+
+
+     .rock{
+        position: absolute;
+        top: 210px;
+        width: 700px;
+        left: 1150px;
+     }
+     .itachi {
+        position: absolute;
+        top: 150px;
+        left: 1450px;
+     }
+
+
+
+      .kenburns-top-left{-webkit-animation:kenburns-top-left 35s ease-out both;animation:kenburns-top-left 35s ease-out both}
+
+
+
+      @-webkit-keyframes kenburns-top-left{0%{-webkit-transform:scale(1) translate(0,0);transform:scale(1) translate(0,0);-webkit-transform-origin:16% 16%;transform-origin:16% 16%}100%{-webkit-transform:scale(1.25) translate(-20px,-15px);transform:scale(1.25) translate(-20px,-15px);-webkit-transform-origin:top left;transform-origin:top left}}@keyframes kenburns-top-left{0%{-webkit-transform:scale(1) translate(0,0);transform:scale(1) translate(0,0);-webkit-transform-origin:16% 16%;transform-origin:16% 16%}100%{-webkit-transform:scale(1.25) translate(-20px,-15px);transform:scale(1.25) translate(-20px,-15px);-webkit-transform-origin:top left;transform-origin:top left}}
