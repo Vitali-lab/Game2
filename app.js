@@ -194,7 +194,7 @@ let loop = requestAnimationFrame(gameLoop);
 
 
 setTimeout (function newLocation() {
-    background.style.backgroundImage = 'url(/backgr.jpg)'
+    background.style.backgroundImage = 'url(backgr.jpg)'
     shuriken.src = 'raven.gif'
 
     const sharingan = document.createElement('img')
