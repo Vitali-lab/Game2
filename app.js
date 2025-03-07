@@ -195,20 +195,20 @@ let loop = requestAnimationFrame(gameLoop);
 
 setTimeout (function newLocation() {
     background.style.backgroundImage = 'url(/backgr.jpg)'
-    shuriken.src = '/raven.gif'
+    shuriken.src = 'raven.gif'
 
     const sharingan = document.createElement('img')
     sharingan.className = 'sharingan'
-    sharingan.src = '/sharin.gif'
+    sharingan.src = 'sharin.gif'
     
 
     const rock = document.createElement ('img')
     rock.className = 'rock'
-    rock.src = '/rock.webp'
+    rock.src = 'rock.webp'
 
     const itachi = document.createElement('img')
     itachi.className = 'itachi'
-    itachi.src = '/itachi.gif'
+    itachi.src = 'itachi.gif'
     itachi.style.transform = 'rotateY(180deg)'
 
     body.appendChild(sharingan)
